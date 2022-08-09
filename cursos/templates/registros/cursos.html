@@ -1,0 +1,39 @@
+{% extends 'inicio/encabezado.html' %} {% block titulo %} Cursos {% endblock %} {% comment %} Contenido Cursos {% endcomment %} {% block contenido %}
+<br><br>
+<h3 class="card-title">Cursos
+            
+        </h3>
+
+
+    <div class="card-body m-5 ml-5">
+        <table class="table table-primary table-striped">
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Nombre del Curso</th>
+                  
+                    <th>Descripcion</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for curso in cursos %}
+                <tr>
+                    <td class="text-center ">
+                        <image src="{{curso.imagen.url }} " alt="{{ curso.nombre }} " class="img-fluid " width="100 ">
+                    </td>
+                    <td>{{ curso.NombreCurso }}</td>
+               
+                    <td>{{ curso.Descripcion }}</td>
+                 
+                </tr>
+                {% endfor %}
+
+        </table>
+    </div>
+
+
+
+
+{% endblock%}

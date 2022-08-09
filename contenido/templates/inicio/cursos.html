@@ -1,0 +1,39 @@
+{% extends 'inicio/encabezado.html' %} {% block titulo %} Cursos {% endblock %} {% comment %} Contenido Cursos {% endcomment %} {% block contenido %}
+<br><br>
+
+
+<div class="card card-primary m-4 my-3">
+    <div class="card-header">
+        <h3 class="card-title">Principal</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Nombre del Curso</th>
+                    <th>Nombre del Tutor</th>
+                    <th>Descripcion</th>
+                    <th>Enlace y Plataforma</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src='https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2016/03/1b04b-django-logo.png?ssl=1' width="100">
+                    </td>
+                    <td class="text-semibold">Flutter</td>
+                    <td class="muted">Fernando Herrera</td>
+                    <td class="muted">Curso Flutter Basico</td>
+                    <td class="muted">
+                        <a href="udemy.com" target="_blank">udemy</td>
+                     </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+    {% endblock%}
